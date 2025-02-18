@@ -1,14 +1,14 @@
 
 // TODO: edit your page here, not in the html file
 // head
-var TITLE = "Student Thesis Project Page";
-var FIRST_AUTHOR = "The First Author";
+var TITLE = "Implementation and evaluation of Neural Radiance Fields as an immersive technology in industry at technology start-up Dromni: An application study";
+var FIRST_AUTHOR = "Dominik Widmann";
 var FIRST_AUTHOR_LINK = "tbd";
-var PROGRAM_NAME = "Study program name and year/semester";
-var SUPERVISOR = "The supervisor";
-var SUPERVISOR_LINK = "tbd";
-var SECOND_SUPERVISOR = "Second supervisor";
-var SECOND_SUPERVISOR_LINK = "tbd";
+var PROGRAM_NAME = "Online Media - Summer 2024";
+var SUPERVISOR = "Prof. Dr. Uwe Hahne";
+var SUPERVISOR_LINK = "https://uhahne.github.io/";
+var SECOND_SUPERVISOR = "Dr. Maximilian Prexl";
+var SECOND_SUPERVISOR_LINK = "https://dromni.eu/about-us/";
 // link buttons
 var hideThesis = false;
 var THESIS_LINK = "tbd";
