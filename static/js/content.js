@@ -3,7 +3,7 @@
 // head
 var TITLE = "Implementation and evaluation of Neural Radiance Fields as an immersive technology in industry at technology start-up Dromni: An application study";
 var FIRST_AUTHOR = "Dominik Widmann";
-var FIRST_AUTHOR_LINK = "tbd";
+var FIRST_AUTHOR_LINK = "mailto:do.widmann"+ "@" + "gmail.com";
 var PROGRAM_NAME = "Online Media - Summer 2024";
 var SUPERVISOR = "Prof. Dr. Uwe Hahne";
 var SUPERVISOR_LINK = "https://uhahne.github.io/";
@@ -11,7 +11,7 @@ var SECOND_SUPERVISOR = "Dr. Maximilian Prexl";
 var SECOND_SUPERVISOR_LINK = "https://dromni.eu/about-us/";
 // link buttons
 var hideThesis = false;
-var THESIS_LINK = "tbd";
+var THESIS_LINK = "static/pdfs/Bachelor_Thesis_Dominik_Widmann_269961.pdf";
 var hideSupplementary = true;
 var SUPPLEMENTARY_LINK = "tbd";
 var hideGithub = true;
@@ -20,29 +20,29 @@ var hideArxiv = true;
 var ARXIV_LINK = "tbd";
 // teaser image or video
 var showTeaserVideo = false;  // preferable exclusive
-var showTeaserImage = false; // either video or image
+var showTeaserImage = true; // either video or image
 var TEASER_VIDEO_LINK = "static/videos/banner_video.mp4";
-var TEASER_IMAGE_LINK = "static/images/noteaser.jpg";
-var TEASER_TEXT = "Describe the teaser image or video. It should be self-explaining so that the image/video plus this text make sense without reading the abstract or the full thesis. The image/video has to be impressive as it is the first impression a visitor gets.";
+var TEASER_IMAGE_LINK = "static/images/teaser.png";
+var TEASER_TEXT = "Nerfstudios Live Web Viewer: Displays various scene configuration options and showcases the camera inputs used within the scene.";
 // abstract
-var ABSTRACT = "<p>Your abstract text comes here. Use less than 1920 characters and summarize your work here. State your contribution to the scientific community or the main selling point of your thesis.</p><p>It may contain multiple paragraphs, but try to avoid it.</p>"
+var ABSTRACT = "<p>This thesis explores the implementation and evaluation of Neural Radiance Fields (NeRFs) as an immersive technology within industrial applications. The research is centered around the use of the Nerfstudio framework, which consolidates various state-of-the-art NeRF techniques under a unified structure. The work delves into the theoretical foundations of NeRFs, examining improvements and models that enhance the algorithm’s ability to synthesize novel views of complex scenes with high precision. A significant part of the paper is dedicated to providing a practical guide for users, especially those without a technical background, on how to effectively use Smartphone cameras for data collection. This includes detailed instructions on setting up the framework, overcoming common installation challenges, and optimizing data acquisition using consumer electronics. The research emphasizes the importance of reproducibility and the impact of various factors on the quality of datasets used in NeRF training. In the applied section, the thesis explores the potential of NeRF technology in industrial contexts through case studies, demonstrating its ability to create immersive 3D representations of environments such as construction sites.</p>"
 // image carousel
-var showImageCarousel = true;
+var showImageCarousel = false;
 var icImageLinks = ["static/images/carousel2.jpg", "static/images/carousel3.jpg", "static/images/carousel4.jpg"]; 
 var icImageDescriptions = ["This is carousel2.jpg...", "This is carousel3.jpg", "This is carousel4.jpg"]; 
 // YouTube video
 var hideYouTubeVideo = true;
 var YOUTUBE_LINK = "https://www.youtube.com/embed/W3I3kAg2J7w?si=oVCFsIV7Xg_l8Z88"
 // Video carousel
-var showVideoCarousel = true;
+var showVideoCarousel = false;
 var VIDEO_CAROUSEL_HEADING = "Heading of the video carousel"
 var vcVideoLinks = ["static/videos/carousel1.mp4", "static/videos/carousel2.mp4", "static/videos/carousel3.mp4"];
 // An embedded PDF document (could be a poster)
-var hidePDF = false;
+var hidePDF = true;
 var PDF_HEADING = "A PDF document"
 var PDF_LINK = 'static/pdfs/sample.pdf';
 // BibTeX code
-var hideBibTeX = false;
+var hideBibTeX = true;
 var BIBTEX_TITLE = "BibTeX"
 var BIBTEX_CODE = 'Copy your BibTeX code here';
 
@@ -113,8 +113,8 @@ if (showImageCarousel) {
     }
 }
 // YouTube video
-document.getElementById('YOUTUBE').hidden = hideYouTubeVideo;
-document.getElementById('YOUTUBE_LINK').setAttribute("src", YOUTUBE_LINK);
+//document.getElementById('YOUTUBE').hidden = hideYouTubeVideo;
+//document.getElementById('YOUTUBE_LINK').setAttribute("src", YOUTUBE_LINK);
 // Video carousel
 if (showVideoCarousel) {
     var videoCarouselSection = document.getElementById('VIDEO_CAROUSEL');
@@ -157,14 +157,14 @@ if (showVideoCarousel) {
     }
 }
 // PDF preview
-document.getElementById('PDF_PREVIEW').hidden = hidePDF;
-document.getElementById('PDF_HEADING').innerHTML = PDF_HEADING;
-document.getElementById('PDF_LINK').setAttribute('src',PDF_LINK);
+//document.getElementById('PDF_PREVIEW').hidden = hidePDF;
+//document.getElementById('PDF_HEADING').innerHTML = PDF_HEADING;
+//document.getElementById('PDF_LINK').setAttribute('src',PDF_LINK);
 
 // BIBTEX
-document.getElementById('BIBTEX').hidden = hideBibTeX;
-document.getElementById('BIBTEX_TITLE').innerHTML = BIBTEX_TITLE;
-document.getElementById('BIBTEX_CODE').innerHTML = BIBTEX_CODE;
+//document.getElementById('BIBTEX').hidden = hideBibTeX;
+//document.getElementById('BIBTEX_TITLE').innerHTML = BIBTEX_TITLE;
+//document.getElementById('BIBTEX_CODE').innerHTML = BIBTEX_CODE;
 
 
 
