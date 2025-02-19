@@ -46,6 +46,8 @@ var hideBibTeX = false;
 var BIBTEX_TITLE = "BibTeX"
 var BIBTEX_CODE = '@phdthesis{widmannImplementationEvaluationNeural2024,<br> type = {Bachelor Thesis},<br> title = {Implementation and Evaluation of {{Neural Radiance Fields}} as an Immersive Technology in Industry at Technology Start-up {{Dromni}}: {{An}} Application Study},<br> author = {Widmann, Dominik},<br> year = {2024},<br> school = {Furtwangen University}<br>}';
 
+console.log("hello from content at start.");
+
 // Code to include the variable in the HTML (DOM manipulation) - no need to edit
 // head information
 document.getElementById('TITLE').innerHTML = TITLE;
@@ -166,5 +168,5 @@ document.getElementById('BIBTEX').hidden = hideBibTeX;
 document.getElementById('BIBTEX_TITLE').innerHTML = BIBTEX_TITLE;
 document.getElementById('BIBTEX_CODE').innerHTML = BIBTEX_CODE;
 
-
+console.log("hello from content at end.");
 
