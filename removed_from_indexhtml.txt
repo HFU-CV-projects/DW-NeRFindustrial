@@ -35,11 +35,3 @@
     </section>
 <!--End paper poster -->
 
-<!--BibTex citation -->
-    <section id="BIBTEX" class="section" id="BibTeX">
-      <div class="container is-max-desktop content">
-        <h2 id="BIBTEX_TITLE" class="title">BibTeX</h2>
-        <pre><code id="BIBTEX_CODE">BibTex Code Here</code></pre>
-      </div>
-    </section>
-<!--End BibTex citation -->

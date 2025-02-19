@@ -27,24 +27,24 @@ var TEASER_TEXT = "Nerfstudios Live Web Viewer: Displays various scene configura
 // abstract
 var ABSTRACT = "<p>This thesis explores the implementation and evaluation of Neural Radiance Fields (NeRFs) as an immersive technology within industrial applications. The research is centered around the use of the Nerfstudio framework, which consolidates various state-of-the-art NeRF techniques under a unified structure. The work delves into the theoretical foundations of NeRFs, examining improvements and models that enhance the algorithm’s ability to synthesize novel views of complex scenes with high precision. A significant part of the paper is dedicated to providing a practical guide for users, especially those without a technical background, on how to effectively use Smartphone cameras for data collection. This includes detailed instructions on setting up the framework, overcoming common installation challenges, and optimizing data acquisition using consumer electronics. The research emphasizes the importance of reproducibility and the impact of various factors on the quality of datasets used in NeRF training. In the applied section, the thesis explores the potential of NeRF technology in industrial contexts through case studies, demonstrating its ability to create immersive 3D representations of environments such as construction sites.</p>"
 // image carousel
-var showImageCarousel = false;
-var icImageLinks = ["static/images/carousel2.jpg", "static/images/carousel3.jpg", "static/images/carousel4.jpg"]; 
-var icImageDescriptions = ["This is carousel2.jpg...", "This is carousel3.jpg", "This is carousel4.jpg"]; 
+var showImageCarousel = true;
+var icImageLinks = ["static/images/ABau_Fahrstuhl-01.png", "static/images/ABau_Fahrstuhl-02.png", "static/images/ABau_Fahrstuhl-03.png"]; 
+var icImageDescriptions = ["A novel view from the A-Bau data set.", "A novel view from the A-Bau data set.", "A novel view from the A-Bau data set."]; 
 // YouTube video
 var hideYouTubeVideo = true;
 var YOUTUBE_LINK = "https://www.youtube.com/embed/W3I3kAg2J7w?si=oVCFsIV7Xg_l8Z88"
 // Video carousel
-var showVideoCarousel = false;
-var VIDEO_CAROUSEL_HEADING = "Heading of the video carousel"
-var vcVideoLinks = ["static/videos/carousel1.mp4", "static/videos/carousel2.mp4", "static/videos/carousel3.mp4"];
+var showVideoCarousel = true;
+var VIDEO_CAROUSEL_HEADING = "Example novel view videos from a construction site"
+var vcVideoLinks = ["static/videos/ABau_Fahrstuhl_frei.mp4", "static/videos/ABau_Fahrstuhl_Gerüst.mp4", "static/videos/ABau_Fahrstuhl_wechselnd.mp4"];
 // An embedded PDF document (could be a poster)
 var hidePDF = true;
 var PDF_HEADING = "A PDF document"
 var PDF_LINK = 'static/pdfs/sample.pdf';
 // BibTeX code
-var hideBibTeX = true;
+var hideBibTeX = false;
 var BIBTEX_TITLE = "BibTeX"
-var BIBTEX_CODE = 'Copy your BibTeX code here';
+var BIBTEX_CODE = '@phdthesis{widmannImplementationEvaluationNeural2024,<br> type = {Bachelor Thesis},<br> title = {Implementation and Evaluation of {{Neural Radiance Fields}} as an Immersive Technology in Industry at Technology Start-up {{Dromni}}: {{An}} Application Study},<br> author = {Widmann, Dominik},<br> year = {2024},<br> school = {Furtwangen University}<br>}';
 
 // Code to include the variable in the HTML (DOM manipulation) - no need to edit
 // head information
@@ -162,9 +162,9 @@ if (showVideoCarousel) {
 //document.getElementById('PDF_LINK').setAttribute('src',PDF_LINK);
 
 // BIBTEX
-//document.getElementById('BIBTEX').hidden = hideBibTeX;
-//document.getElementById('BIBTEX_TITLE').innerHTML = BIBTEX_TITLE;
-//document.getElementById('BIBTEX_CODE').innerHTML = BIBTEX_CODE;
+document.getElementById('BIBTEX').hidden = hideBibTeX;
+document.getElementById('BIBTEX_TITLE').innerHTML = BIBTEX_TITLE;
+document.getElementById('BIBTEX_CODE').innerHTML = BIBTEX_CODE;
 
 
 
